@@ -23,8 +23,8 @@ with open('tfidfvec.pkl', 'rb') as f:
   vec = pickle.load(f)
 
 from joblib import dump, load
-#clf= pickle.load(open('spam_classifier_model.pkl','rb'))
-clf=load('spam_classifier_model.joblib')
+clf= pickle.load(open('spam_classifier_model.pkl','rb'))
+#clf=load('spam_classifier_model.joblib')
 
 def main():
     st.title("Spam Mail Detector")
